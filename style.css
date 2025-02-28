@@ -135,7 +135,7 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     font-size: 1em;
-    min-width: 400px;
+    min-width: 600px; /* حداقل عرض جدول */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -149,6 +149,7 @@ table thead tr {
 
 table th, table td {
     padding: 12px 15px;
+    white-space: nowrap; 
 }
 
 table tbody tr {
@@ -165,6 +166,12 @@ table tbody tr:last-of-type {
 
 table tbody tr:hover {
     background-color: #f1f1f1;
+}
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
