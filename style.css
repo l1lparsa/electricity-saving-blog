@@ -173,3 +173,65 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+/* Media Queries برای ریسپانسیو کردن سایت */
+
+/* برای صفحه‌های با عرض کمتر از 768px (موبایل) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-card img {
+        margin: 0 0 10px 0;
+    }
+}
+
+/* برای صفحه‌های با عرض کمتر از 480px (موبایل‌های کوچک) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .card i {
+        font-size: 1.5em;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+}
