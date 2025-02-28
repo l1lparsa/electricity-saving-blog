@@ -242,3 +242,42 @@ footer {
         padding: 6px;
     }
 }
+/* استایل‌های بخش تصاویر SVG */
+#animated-svgs {
+    padding: 40px 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.svg-item {
+    width: 45%;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out, float 4s infinite ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* ریسپانسیو کردن تصاویر برای دستگاه‌های کوچک */
+@media (max-width: 768px) {
+    .svg-item {
+        width: 100%;
+    }
+}
